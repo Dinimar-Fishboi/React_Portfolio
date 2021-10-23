@@ -2,13 +2,7 @@ import React from 'react';
 import avatar from './avatar.png'
 import { FaGithub } from "react-icons/fa";
 
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { library } from '@fortawesome/free-solid-svg-icons'
-
-
-
-export default function Portfolio() {
+export default function Portfolio({projects}) {
     const styles = {
         text: {
             // display: 'flex',
@@ -18,25 +12,37 @@ export default function Portfolio() {
             alignItems: "center",
             // flexDirectioon: "column",
             justifyContent: 'flex-end',
-
         },
-        // border: {
-        //     margin: '5%',
-        // }
     }
 
   return (
     <div style={styles.border} className="border"> 
+        <h1>Portfolio</h1>
         <div className="card" style={styles.text}>
-        <img src={avatar} className="card-img img" alt="..."/>
-        <div className="card-img-overlay">
-            <h5 className="card-title" ><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Card title</a></h5>
-            <p className="card-text" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"></p>
-            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-                <FaGithub  style={{fontSize: '50px'}} />
-            </a>
+            <img src={avatar} className="card-img img" alt="..."/>
+            <div className="card-img-overlay">
+                <h5 className="card-title" ><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Card title</a></h5>
+                <p className="card-text" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"></p>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                    <FaGithub  style={{fontSize: '50px'}} />
+                </a>
+            </div>
         </div>
-        </div>
+        <div>
+        {/* TODO: Copy above template into map function and update sections that will be changed dynamically */}
+        {projects.map(
+                (item) =>   {
+                    console.log(item)
+                return (
+                    <li className="nav-item" key={item.id}>
+                      
+                        {item.title}
+                    </li>
+                      )
+                  }
+              )
+            }
+        </div> 
     </div>
     );
 }

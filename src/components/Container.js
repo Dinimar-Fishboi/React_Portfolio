@@ -8,13 +8,38 @@ import Resume from './pages/Resume';
 
 export default function Container() {
     const [currentPage, setCurrentPage] = useState('About');
+
+    const publicProjects = [
+        {
+            title: 'Barter Place',
+            img: "",
+            github: "",
+            website: "",
+            id: 1,
+        },
+        {
+            title: "Help I'm Bored",
+            img: "",
+            github: "",
+            website: "",
+            id: 2,
+        },
+        {
+            title: 'Note Taker',
+            img: "",
+            github: "",
+            website: "",
+            id: 3,
+        },
+        
+    ]
   
     const renderPage = () => {
       if (currentPage === 'About') {
         return <About />;
       }
       if (currentPage === 'Portfolio') {
-        return <Portfolio />;
+        return <Portfolio projects={publicProjects}/>;
       }
       if (currentPage === 'Resume') {
         return <Resume/>;
