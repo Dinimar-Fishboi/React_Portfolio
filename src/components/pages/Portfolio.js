@@ -20,13 +20,13 @@ export default function Portfolio() {
             justifyContent: 'flex-end',
 
         },
-        border: {
-            margin: '5%',
-        }
+        // border: {
+        //     margin: '5%',
+        // }
     }
 
   return (
-    <div style={styles.border}> 
+    <div style={styles.border} className="border"> 
         <div className="card" style={styles.text}>
         <img src={avatar} className="card-img img" alt="..."/>
         <div className="card-img-overlay">
