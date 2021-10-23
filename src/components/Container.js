@@ -9,7 +9,6 @@ import Resume from './pages/Resume';
 export default function Container() {
     const [currentPage, setCurrentPage] = useState('About');
   
-    // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
       if (currentPage === 'About') {
         return <About />;
@@ -23,11 +22,13 @@ export default function Container() {
       return <Contact />;
     };
 
+    const name = ['About', 'Portfolio', 'Contact', 'Resume'];
+
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
         <div>
-         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+         <Header currentPage={currentPage} handlePageChange={handlePageChange} name={name} />
          {renderPage()}
          <Footer/>
         </div>
