@@ -21,3 +21,26 @@ code {
   left: 0;
   width: 100%;
 }
+
+.card-text{
+  right: 0;
+  bottom: 0;
+  color: black;
+  height: 100%;
+  align-items: flex-end;
+
+}
+
+a {
+  background-color: white;
+  width: 100%;
+}
+
+.subtitle{
+  background-color: white;
+  bottom: 0;
+  width: 75%;
+  padding: 1%;
+  opacity: .8;
+  border-radius: 20px;
+}
