@@ -5,64 +5,17 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import imageFiles from './pages/tinified/index.js';
 
 
 export default function Container() {
     const [currentPage, setCurrentPage] = useState('About');
-
-    const publicProjects = [
-        {
-            title: 'Barter Place',
-            img: imageFiles.barter,
-            github: "https://github.com/Dinimar-Fishboi/Project_2_team3",
-            website: "https://project2t3.herokuapp.com/",
-            id: 1,
-        },
-        {
-            title: "Help I'm Bored",
-            img: imageFiles.bored,
-            github: "https://github.com/rajnidua/project-one",
-            website: "https://rajnidua.github.io/project-one/",
-            id: 2,
-        },
-        {
-            title: 'Note Taker',
-            img: imageFiles.note,
-            github: "https://github.com/Dinimar-Fishboi/NoteTaker",
-            website: "https://eleven-note-take.herokuapp.com/",
-            id: 3,
-        },
-        {
-            title: 'Budget Tracker',
-            img: imageFiles.budget,
-            github: "https://github.com/Dinimar-Fishboi/Budget_Tracker",
-            website: "https://boiling-brook-13121.herokuapp.com",
-            id: 4,
-        },
-        {
-            title: 'Password Generator',
-            img: imageFiles.password,
-            github: "https://github.com/Dinimar-Fishboi/PasswordGenerator",
-            website: "https://dinimar-fishboi.github.io/PasswordGenerator/",
-            id: 5,
-        },
-        {
-            title: 'Work Day Scheduler',
-            img: imageFiles.workday,
-            github: "https://github.com/Dinimar-Fishboi/Work-Day-Scheduler",
-            website: "https://dinimar-fishboi.github.io/Work-Day-Scheduler/",
-            id: 6,
-        }
-        
-    ]
   
     const renderPage = () => {
       if (currentPage === 'About') {
         return <About />;
       }
       if (currentPage === 'Portfolio') {
-        return <Portfolio projects={publicProjects}/>;
+        return <Portfolio/>;
       }
       if (currentPage === 'Resume') {
         return <Resume/>;
