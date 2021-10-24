@@ -9,6 +9,7 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [hover, setHover] = useState(false);
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -43,6 +44,18 @@ export default function Contact() {
       setErrorMessage(`Thank you ${name}! - We'll be in touch soon`);
     };
 
+    // TODO: test argument
+    const emptyField = (e) => {
+      e.preventDefault();
+      if (hover === false) {
+        setHover(true)
+      } else if (hover === true) {
+        setErrorMessage("Please fill all fields");
+        setHover(false);
+      }
+
+    }
+
     const styles = {
       h1: {
         padding: '3%'
@@ -56,15 +69,15 @@ export default function Contact() {
         <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Name </Form.Label>
-            <Form.Control type="text" placeholder="Enter your name here" value={name} onChange={handleInputChange} name="name"/>
+            <Form.Control type="text" placeholder="Enter your name here" value={name} onMouseLeave={emptyField} onChange={handleInputChange} name="name"/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email </Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" value={email} onChange={handleInputChange} name="email"/>
+            <Form.Control type="email" placeholder="name@example.com" value={email} onMouseLeave={emptyField} onChange={handleInputChange} name="email"/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} value={message} name='message' onChange={handleInputChange} type='text' placeholder="Hello!" />
+            <Form.Control as="textarea" rows={3} value={message} name='message' onMouseLeave={emptyField} onChange={handleInputChange} type='text' placeholder="Hello!" />
           </Form.Group>
           <button type="submit" onClick={handleFormSubmit}>
               Submit
