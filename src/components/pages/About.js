@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <div className="border">
-      <h1>About Page</h1>
+      <h1>About</h1>
       <View style={styles.container}>
         <Text style={styles.text}>
           <h3>

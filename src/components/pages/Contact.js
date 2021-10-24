@@ -45,14 +45,14 @@ export default function Contact() {
 
     const styles = {
       h1: {
-        paddingTop: '3%'
+        padding: '3%'
       }
     }
 
   return (
     <>      
+        <h1 style={styles.h1}>Contact</h1>
         <Container>
-        <h1 style={styles.h1}>Contact Page</h1>
         <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Name </Form.Label>
