@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
 
 export default function Contact() {
 
@@ -41,40 +43,41 @@ export default function Contact() {
       setErrorMessage(`Thank you ${name}! - We'll be in touch soon`);
     };
 
+    const styles = {
+      h1: {
+        paddingTop: '3%'
+      }
+    }
+
   return (
-    <div className="border">
-      <h1>Contact Page</h1>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
+    <>
+          
+        <Container>
+        <h1 style={styles.h1}>Contact Page</h1>
+
+        <Form>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Name </Form.Label>
+            <Form.Control type="text" placeholder="Enter your name here" value={name} onChange={handleInputChange} name="name"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Email </Form.Label>
+            <Form.Control type="email" placeholder="name@example.com" value={email} onChange={handleInputChange} name="email"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control as="textarea" rows={3} value={message} name='message' onChange={handleInputChange} type='text' placeholder="Hello!" />
+          </Form.Group>
+          <button type="submit" onClick={handleFormSubmit}>
+              Submit
+          </button>
+      </Form>
       {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </div>
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+      </Container>
+    </>
   );
 }
