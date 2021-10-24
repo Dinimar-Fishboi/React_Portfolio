@@ -26,9 +26,9 @@ export default function About() {
 
   return (
     <div className="border">
+      <h1>About Page</h1>
       <View style={styles.container}>
         <Text style={styles.text}>
-          <h1>About Page</h1>
           <h3>
             Dev. Fish is a Full Stack Web Developer with a background in E-Learning Development, Relational Aesthetics and Customer Service Systems. 
           </h3>
