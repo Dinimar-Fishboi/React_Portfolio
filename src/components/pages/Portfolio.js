@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from './avatar.png'
+// import avatar from './avatar.png'
 import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio({projects}) {
@@ -18,26 +18,21 @@ export default function Portfolio({projects}) {
   return (
     <div style={styles.border} className="border"> 
         <h1>Portfolio</h1>
-        <div className="card" style={styles.text}>
-            <img src={avatar} className="card-img img" alt="..."/>
-            <div className="card-img-overlay">
-                <h5 className="card-title" ><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Card title</a></h5>
-                <p className="card-text" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"></p>
-                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-                    <FaGithub  style={{fontSize: '50px'}} />
-                </a>
-            </div>
-        </div>
         <div>
-        {/* TODO: Copy above template into map function and update sections that will be changed dynamically */}
-        {projects.map(
+         {projects.map(
                 (item) =>   {
-                    console.log(item)
+                    console.log(item.img)
                 return (
-                    <li className="nav-item" key={item.id}>
-                      
-                        {item.title}
-                    </li>
+                    <div className="card" style={styles.text} key={item.id}>
+                    <img src={item.img} className="card-img img" alt={item.img}/>
+                    <div className="card-img-overlay">
+                        <h5 className="card-title" ><a href={item.website}>{item.title}</a></h5>
+                        <p className="card-text" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"></p>
+                        <a href={item.github}>
+                            <FaGithub  style={{fontSize: '50px'}} />
+                        </a>
+                    </div>
+                </div>
                       )
                   }
               )
