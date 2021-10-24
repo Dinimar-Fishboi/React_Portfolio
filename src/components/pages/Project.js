@@ -3,18 +3,6 @@ import { StyleSheet, Text, View } from "react-native";
 import { FaGithub } from "react-icons/fa";
 
 export default function Project({projects}) {
-    // const styles = {
-    //     text: {
-    //         flex: 1,
-    //         color : 'black',
-    //         width: "40%",
-    //         height: "40%",
-    //         alignItems: "center",
-    //         // flexDirectioon: "column",
-    //         justifyContent: 'flex-end',
-    //         flexWrap: "wrap",
-    //     },
-    // }
 
     const styles = StyleSheet.create({
         container: {
