@@ -13,7 +13,7 @@ export default function Resume() {
       <p>
         Please download my <button href='./resumeFiles/dev.pdf'>Resume</button>
       </p>
-      <a download="dev.pdf" href="./resumeFiles/dev.pdf"> Download Resume</a>
+      <a download="dev.pdf" href="./resumeFiles/dev.pdf" src="./resumeFiles/dev.pdf" > Download Resume</a>
       <Document file={resumePdf}>
         <Page pageNumber={1} />
       </Document>
