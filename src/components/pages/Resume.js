@@ -1,17 +1,22 @@
 import React from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import resumePdf from './resumeFiles/dev.pdf'
 
 export default function Resume() {
+
+   
+
   return (
     <div className="border">
       <h1>Resume</h1>
+      
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Please download my <button href='./resumeFiles/dev.pdf'>Resume</button>
       </p>
+      <a download="dev.pdf" href="./resumeFiles/dev.pdf"> Download Resume</a>
+      <Document file={resumePdf}>
+        <Page pageNumber={1} />
+      </Document>
     </div>
   );
 }
