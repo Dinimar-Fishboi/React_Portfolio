@@ -26,6 +26,7 @@ function Header({ currentPage, handlePageChange, name }) {
                 return (
                     <li className="nav-item" key={item.index}
                         href={item}
+                        style={{color: 'pink'}}
                         onClick={() => handlePageChange(item)}
                         // eslint-disable-next-line
                         className={currentPage === item ? 'nav-link active' : 'nav-link'}>
