@@ -44,7 +44,6 @@ export default function Contact() {
       setErrorMessage(`Thank you ${name}! - We'll be in touch soon`);
     };
 
-    // TODO: test argument
     const emptyField = (e) => {
       e.preventDefault();
       if (hover === false) {
@@ -53,7 +52,6 @@ export default function Contact() {
         setErrorMessage("Please fill all fields");
         setHover(false);
       }
-
     }
 
     const styles = {
@@ -77,7 +75,7 @@ export default function Contact() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} value={message} name='message' onMouseLeave={emptyField} onChange={handleInputChange} type='text' placeholder="Hello!" />
+            <Form.Control as="textarea" rows={6} value={message} name='message' onMouseLeave={emptyField} onChange={handleInputChange} type='text' placeholder="Hello!" />
           </Form.Group>
           <button type="submit" onClick={handleFormSubmit}>
               Submit
