@@ -22,10 +22,10 @@ function Header({ currentPage, handlePageChange, name }) {
             </h1>
             <ul style={styles.nav} className="nav nav-tabs">
             {name.map(
-                (item) =>   {
+                (item, index) =>   {
                     console.log(item)
                 return (
-                    <li className="nav-item" key={item.index}
+                    <li className="nav-item" key={index}
                         href={item}
                         style={{color: '#1B9AAA'}}
                         onClick={() => handlePageChange(item)}

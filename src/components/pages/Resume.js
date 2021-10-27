@@ -21,9 +21,9 @@ export default function Resume() {
         <h3> Front-end</h3>
         <ul>
             {frontEnd.map(
-              (item) => {
+              (item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     {item}
                   </li>
                 )
@@ -33,9 +33,9 @@ export default function Resume() {
         <h3> Back-end</h3>
         <ul>
             {backEnd.map(
-              (item) => {
+              (item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     {item}
                   </li>
                 )
