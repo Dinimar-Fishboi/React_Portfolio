@@ -23,7 +23,6 @@ function Header({ currentPage, handlePageChange, name }) {
             <ul style={styles.nav} className="nav nav-tabs">
             {name.map(
                 (item, index) =>   {
-                    console.log(item)
                 return (
                     <li className="nav-item" key={index}
                         href={item}
