@@ -11,7 +11,7 @@ export default function Footer () {
       width: "100%",
       justifyContent: "center",
       position:'absolue',  
-      
+
     }
   })
 
@@ -19,13 +19,13 @@ export default function Footer () {
       <>
         <View className="footer" style={styles.space}>
           <a href="https://github.com/Dinimar-Fishboi">
-            <FaGithub  style={{fontSize: '40px', margin: '1rem', color: 'pink'}} />
+            <FaGithub  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
          </a>
          <a href="https://www.linkedin.com/in/taytallis/">
-            <FaLinkedin  style={{fontSize: '40px', margin: '1rem', color: 'pink'}} />
+            <FaLinkedin  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
          </a>
          <a href="https://stackoverflow.com">
-            <FaStackOverflow  style={{fontSize: '40px', margin: '1rem', color: 'pink'}} />
+            <FaStackOverflow  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
          </a>
         </View>
       </>

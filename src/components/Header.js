@@ -9,13 +9,14 @@ function Header({ currentPage, handlePageChange, name }) {
             justifyContent: 'flex-end',
         },
         h1: {
-            margin: '10px',
+            padding: '10px',
+            color: '#1B9AAA'
         }
     }
 
   return (
       <>
-        <header>
+        <header style={styles.header}>
             <h1 style={styles.h1}>
                 Dev.Fish Studio
             </h1>
@@ -26,7 +27,7 @@ function Header({ currentPage, handlePageChange, name }) {
                 return (
                     <li className="nav-item" key={item.index}
                         href={item}
-                        style={{color: 'pink'}}
+                        style={{color: '#1B9AAA'}}
                         onClick={() => handlePageChange(item)}
                         // eslint-disable-next-line
                         className={currentPage === item ? 'nav-link active' : 'nav-link'}>

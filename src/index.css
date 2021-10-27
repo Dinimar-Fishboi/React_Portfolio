@@ -12,10 +12,20 @@ code {
     monospace;
 }
 
+.border {
+  padding: 3%;
+  background-color: white;
+  color: '#007587';
+}
+
+.card-img-overlay{
+  padding: 0rem;
+}
+
+
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  background-color: transparent;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -32,10 +42,37 @@ code {
 }
 
 .subtitle{
-  background-color: white;
+  background-color: black;
   bottom: 0;
-  width: 75%;
-  padding: 1%;
-  opacity: .8;
-  border-radius: 20px;
+  width: 100%;
+  padding: 1.5%;
+  opacity: 1;
+  /* border-radius: 20px; */
+}
+
+.htmlCopy {
+  background-color: #007587;
+
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     min-height: 100%;
+ 
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+}
+
+html, body, #app, #app>div {
+  height: 100%;
+  background-color: black;
+
+}
+
+body > #root > div {
+  height: 100vh;
+  background-color: black;
+/* ACTUAL BG COLOUR CHANGE */
 }

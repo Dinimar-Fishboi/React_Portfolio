@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from "react-native";
-import avatar from './avatar.png'
-
+// import avatar from './avatar.png'
+import shark from './shark.jpeg'
 
 export default function About() {
 
@@ -50,7 +50,7 @@ export default function About() {
             </li>
           </ul>
           </Text>
-        <img src={avatar} style={styles.img} alt='avatar'/>
+        <img src={shark} style={styles.img} alt='avatar'/>
       </View>
     </div>
   );

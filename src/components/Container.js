@@ -29,7 +29,7 @@ export default function Container() {
 
     return (
         <div>
-         <Header currentPage={currentPage} handlePageChange={handlePageChange} name={name} />
+         <Header currentPage={currentPage} handlePageChange={handlePageChange} name={name} screenOptions={{headerTransparent: true}}/>
          {renderPage()}
          <Footer/>
         </div>

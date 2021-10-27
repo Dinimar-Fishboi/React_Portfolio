@@ -55,13 +55,19 @@ export default function Contact() {
     }
 
     const styles = {
+      contact: {
+        color: '#1B9AAA',
+      },
       h1: {
-        padding: '3%'
-      }
+        padding: '3%',
+      },
+      button: {
+        backgroundColor: '1B9AAA',
+      },
     }
 
   return (
-    <>      
+    <div style={styles.contact}>      
         <h1 style={styles.h1}>Contact</h1>
         <Container>
         <Form>
@@ -77,7 +83,7 @@ export default function Contact() {
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={6} value={message} name='message' onMouseLeave={emptyField} onChange={handleInputChange} type='text' placeholder="Hello!" />
           </Form.Group>
-          <button type="submit" onClick={handleFormSubmit}>
+          <button style={styles.button} type="submit" onClick={handleFormSubmit}>
               Submit
           </button>
       </Form>
@@ -87,6 +93,6 @@ export default function Contact() {
             </div>
           )}
       </Container>
-    </>
+    </div>
   );
 }
