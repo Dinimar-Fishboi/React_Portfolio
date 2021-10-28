@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Professional README.md and LICENSE Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. This is a command line application that quickly generates a professional README file and LICENSE for your project, so that you can spend more valuable time writing your code.
 
-### `npm start`
+## Video link + Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Example of user runthrough (video)](https://vimeo.com/584465340)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Screen Shot 2021-08-08 at 19 10 02](https://user-images.githubusercontent.com/83541287/128627038-3b01db5d-492a-4e52-b6e3-3531c8df5575.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents 
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license-and-copyright)
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Javascript
+- Node.js
+- Inquirer.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install this program; clone this repository to your PC, navigate to the Develop folder and initialise npm in your new repo (instructions [here](https://docs.npmjs.com/cli/v6/commands/npm-init)), then install the inquirer package (instructions on that [here](https://www.npmjs.com/package/inquirer)).
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To start the program, navigate to the Develop file and run the following command line: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```md
+node index.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tests
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This program will ask you the project title, description, installation instructions, user guide, contribution information and any tests you recommend running on the system. For licensing and copyright purposes you will also be asked for your email, Git URL, full name/name of organisation ,year/s the project was worked on and to choose between one of four Licenses. This project doesn’t automatically upload the README and LICENSE, but will accept a ‘keysmash’ answer to be easily deleted later.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To contribute to this project, please fork the file; edit as desired and submit a pull request. Alternatively if you wish to reach out contact us directly our info is below.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Questions
 
-### Code Splitting
+If you have any questions, please reach out to us.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [https://github.com/Dinimar-Fishboi](https://github.com/Dinimar-Fishboi)
+- [dev.fish.studio@protonmail.com](#dev.fish.studio@protonmail.com)
 
-### Analyzing the Bundle Size
+## License and Copyright
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ © Dev Fish Studios, 2021
 
-### Making a Progressive Web App
+Licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
