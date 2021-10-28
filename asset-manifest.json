@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/React_Portfolio/static/css/main.299c3da4.chunk.css",
+    "main.js": "/React_Portfolio/static/js/main.074ff8c1.chunk.js",
+    "main.js.map": "/React_Portfolio/static/js/main.074ff8c1.chunk.js.map",
+    "runtime-main.js": "/React_Portfolio/static/js/runtime-main.e0491550.js",
+    "runtime-main.js.map": "/React_Portfolio/static/js/runtime-main.e0491550.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/React_Portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.0d5dbdc6.chunk.js": "/React_Portfolio/static/js/2.0d5dbdc6.chunk.js",
+    "static/js/2.0d5dbdc6.chunk.js.map": "/React_Portfolio/static/js/2.0d5dbdc6.chunk.js.map",
+    "index.html": "/React_Portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/React_Portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.299c3da4.chunk.css.map": "/React_Portfolio/static/css/main.299c3da4.chunk.css.map",
+    "static/js/2.0d5dbdc6.chunk.js.LICENSE.txt": "/React_Portfolio/static/js/2.0d5dbdc6.chunk.js.LICENSE.txt",
+    "static/media/Barter.png": "/React_Portfolio/static/media/Barter.aa56e41d.png",
+    "static/media/Bored.png": "/React_Portfolio/static/media/Bored.21855789.png",
+    "static/media/Budget.png": "/React_Portfolio/static/media/Budget.d74d84ed.png",
+    "static/media/Note.png": "/React_Portfolio/static/media/Note.b1c9ba3d.png",
+    "static/media/Password.png": "/React_Portfolio/static/media/Password.0e51203f.png",
+    "static/media/Workday.png": "/React_Portfolio/static/media/Workday.abdda4e8.png",
+    "static/media/dev.a8089f38.pdf": "/React_Portfolio/static/media/dev.a8089f38.pdf",
+    "static/media/shark.d816aa78.jpeg": "/React_Portfolio/static/media/shark.d816aa78.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0491550.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.0d5dbdc6.chunk.js",
+    "static/css/main.299c3da4.chunk.css",
+    "static/js/main.074ff8c1.chunk.js"
+  ]
+}
