@@ -15,7 +15,7 @@ export default function Resume() {
     <div className="border">
       <h1>Resume</h1>
       <p>
-        Please download my <a download={resumePdf} href={resumePdf}>Resume</a>
+        Please download my <a className="resume" download={resumePdf} href={resumePdf}>Resume</a>
       </p>
       <div>
         <h3> Front-end</h3>

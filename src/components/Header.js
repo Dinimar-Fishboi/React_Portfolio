@@ -9,7 +9,9 @@ function Header({ currentPage, handlePageChange, name }) {
             justifyContent: 'flex-end',
         },
         h1: {
-            padding: '10px',
+            // padding: '10px',
+            padding: '1rem',
+
             color: '#1B9AAA'
         }
     }

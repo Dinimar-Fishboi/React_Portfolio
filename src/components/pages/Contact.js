@@ -49,7 +49,7 @@ export default function Contact() {
       if (hover === false) {
         setHover(true)
       } else if (hover === true) {
-        setErrorMessage("Please fill all fields");
+        setErrorMessage("Please fill out all fields");
         setHover(false);
       }
     }
@@ -60,9 +60,6 @@ export default function Contact() {
       },
       h1: {
         padding: '3%',
-      },
-      button: {
-        backgroundColor: '1B9AAA',
       },
     }
 
@@ -83,7 +80,7 @@ export default function Contact() {
             <Form.Label>Message</Form.Label>
             <Form.Control as="textarea" rows={6} value={message} name='message' onMouseLeave={emptyField} onChange={handleInputChange} type='text' placeholder="Hello!" />
           </Form.Group>
-          <button style={styles.button} type="submit" onClick={handleFormSubmit}>
+          <button className="anchor" style={{backgroundColor:'black'}} type="submit" onClick={handleFormSubmit}>
               Submit
           </button>
       </Form>

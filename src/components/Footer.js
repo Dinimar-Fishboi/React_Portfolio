@@ -18,14 +18,14 @@ export default function Footer () {
     return (
       <>
         <View className="footer" style={styles.space}>
-          <a href="https://github.com/Dinimar-Fishboi">
-            <FaGithub  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
+          <a href="https://github.com/Dinimar-Fishboi" className='anchor'>
+            <FaGithub  style={{fontSize: '40px', margin: '1rem'}} />
          </a>
-         <a href="https://www.linkedin.com/in/taytallis/">
-            <FaLinkedin  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
+         <a href="https://www.linkedin.com/in/taytallis/" className='anchor'>
+            <FaLinkedin  style={{fontSize: '40px', margin: '1rem'}} />
          </a>
-         <a href="https://stackoverflow.com">
-            <FaStackOverflow  style={{fontSize: '40px', margin: '1rem', color: 'white'}} />
+         <a href="https://stackoverflow.com" className='anchor'>
+            <FaStackOverflow  style={{fontSize: '40px', margin: '1rem'}} />
          </a>
         </View>
       </>

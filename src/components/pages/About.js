@@ -19,7 +19,7 @@ export default function About() {
     //   listStyleType: 'none'
     // },
     img: {
-      width: '200px',
+      width: '300px',
       height: 'auto', 
     },
   }

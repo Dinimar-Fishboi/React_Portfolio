@@ -50,6 +50,23 @@ code {
   /* border-radius: 20px; */
 }
 
+.anchor{
+  color: white;  
+  border-radius: 20px;
+}
+
+.anchor:hover {
+  color: blueviolet;
+}
+
+.resume{
+  color: #1b9aaa;
+}
+
+.resume:hover{
+  color: blueviolet;
+}
+
 .htmlCopy {
   background-color: #007587;
 
