@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import { FaGithub } from "react-icons/fa";
-// import './Project.css'
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export default function Project({projects}) {
 
@@ -12,9 +14,8 @@ export default function Project({projects}) {
            justifyContent: "space-evenly",
         },
         card: {
-            color: 'black',
             flexWrap: 'wrap',
-            width: '45%',
+            // width: '100%',
             margin: '2%',
         },
         text: {
@@ -22,27 +23,35 @@ export default function Project({projects}) {
             alignItems: "flex-end",
             flexDirection: "column",
             height: "100%",
-            color: '#1B9AAA',
+            // color: '#1B9AAA',
         },
+        img: {
+            // width: '100%',
+            height: '450px',
+            // resizeMode: true,
+        }
     })
     
 
     return (
+        <Container>
         <div className="container">
+            <Row lg={12} md={12} sm={12} xs={12}>
             <View style={styles.container} className='container'>
             {projects.map(
                 (item) =>   {
                 return (
-                    <View className="card" style={styles.card} key={item.id}>
+                    <Col lg={6} md={12} sm={12} xs={12}>
+                    <View className="card" style={styles.card} key={item.id} >
                     <div className='card'>
-                    <img src={item.img} className="card-img img" alt={item.img} />
+                    <Image source={item.img} className="card-img img" alt={item.img} style={styles.img}/>
                     <div>
                         <Text style={styles.text}> 
                             <div className="card-text" style={{display: "flex"}}>
                                 <section className="subtitle">
-                                <h5 className="card-title" ><a style={{color: '#1B9AAA'}} href={item.website}>{item.title}</a></h5> 
-                                <a href={item.github}>
-                                    <FaGithub  style={{fontSize: '40px', color: '#1B9AAA'}} />
+                                <h5 className="card-title" ><a className="anchor" href={item.website}>{item.title}</a></h5> 
+                                <a href={item.github} className='anchor'>
+                                    <FaGithub  style={{fontSize: '40px'}} />
                                 </a>
                                 </section>
                             </div>
@@ -50,11 +59,14 @@ export default function Project({projects}) {
                     </div>
                     </div>
                     </View>
+                    </Col>
                       )
                   }
               )
             }
             </View>
+            </Row>
         </div>
+        </Container>
     )
 }
