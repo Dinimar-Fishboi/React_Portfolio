@@ -15,7 +15,6 @@ export default function Project({projects}) {
         },
         card: {
             flexWrap: 'wrap',
-            // width: '100%',
             margin: '2%',
         },
         text: {
@@ -23,12 +22,9 @@ export default function Project({projects}) {
             alignItems: "flex-end",
             flexDirection: "column",
             height: "100%",
-            // color: '#1B9AAA',
         },
         img: {
-            // width: '100%',
             height: '450px',
-            // resizeMode: true,
         }
     })
     

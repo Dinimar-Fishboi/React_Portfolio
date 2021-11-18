@@ -9,9 +9,7 @@ function Header({ currentPage, handlePageChange, name }) {
             justifyContent: 'flex-end',
         },
         h1: {
-            // padding: '10px',
             padding: '1rem',
-
             color: '#1B9AAA'
         }
     }
@@ -20,7 +18,7 @@ function Header({ currentPage, handlePageChange, name }) {
       <>
         <header style={styles.header}>
             <h1 style={styles.h1}>
-                Dev.Fish Studio
+                Tay Tallis
             </h1>
             <ul style={styles.nav} className="nav nav-tabs">
             {name.map(

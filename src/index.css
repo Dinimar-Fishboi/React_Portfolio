@@ -47,7 +47,6 @@ code {
   width: 100%;
   padding: 1.5%;
   opacity: 1;
-  /* border-radius: 20px; */
 }
 
 .anchor{
@@ -91,5 +90,4 @@ html, body, #app, #app>div {
 body > #root > div {
   height: 100vh;
   background-color: black;
-/* ACTUAL BG COLOUR CHANGE */
 }

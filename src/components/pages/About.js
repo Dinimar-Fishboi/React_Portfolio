@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View } from "react-native";
-// import avatar from './avatar.png'
 import shark from './shark.jpeg'
 
 export default function About() {
@@ -15,9 +14,6 @@ export default function About() {
       flexDirection: 'column',
       width: '75%'
     },
-    // ul: {
-    //   listStyleType: 'none'
-    // },
     img: {
       width: '300px',
       height: 'auto', 
@@ -30,7 +26,7 @@ export default function About() {
       <View style={styles.container}>
         <Text style={styles.text}>
           <h3>
-            Dev. Fish is a Full Stack Web Developer with a background in E-Learning Development, Relational Aesthetics and Customer Service Systems. 
+            Tay Tallis is a Full Stack Web Developer with a background in E-Learning Development, Relational Aesthetics and Customer Service Systems. 
           </h3>
           <h4>
             They are...
