@@ -49,3 +49,9 @@
 .card-img-overlay{
   padding: 0rem;
 }
+
+.badges {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+}

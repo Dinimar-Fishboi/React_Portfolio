@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View } from "react-native";
 import shark from './shark.jpeg'
+import resumePdf from './resumeFiles/dev.pdf'
 
 export default function About() {
 
@@ -45,7 +46,10 @@ export default function About() {
                 Always bringing a strong collaborative energy with concept-driven execution paired and agile development strategies to all projects they are involved in. 
             </li>
           </ul>
-          </Text>
+          <p>
+            Please download my <a className="resume" download={resumePdf} href={resumePdf}>Resume</a>
+          </p>          
+        </Text>
         <img src={shark} style={styles.img} alt='avatar'/>
       </View>
     </div>

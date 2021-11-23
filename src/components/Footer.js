@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from "react-native";
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 export default function Footer () {
@@ -23,9 +23,6 @@ export default function Footer () {
          </a>
          <a href="https://www.linkedin.com/in/taytallis/" className='anchor'>
             <FaLinkedin  style={{fontSize: '40px', margin: '1rem'}} />
-         </a>
-         <a href="https://stackoverflow.com" className='anchor'>
-            <FaStackOverflow  style={{fontSize: '40px', margin: '1rem'}} />
          </a>
         </View>
       </>

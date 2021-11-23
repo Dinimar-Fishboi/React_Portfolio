@@ -32,6 +32,12 @@ code {
   width: 100%;
 }
 
+.badges{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction:  row
+}
+
 .card-text{
   right: 0;
   bottom: 0;
